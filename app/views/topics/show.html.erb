@@ -1,0 +1,9 @@
+<div class="topics">
+
+<h1><%= @topic.title %></h1>
+<p><%= @topic.description %></p>
+
+<!-- # the destroy action, which allows you to delete topics. -->
+ <%= link_to "Delete", topic_path(@topic), method: :delete, data: { confirm: "Delete?" } %>
+
+</div>

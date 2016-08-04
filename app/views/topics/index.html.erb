@@ -1,0 +1,17 @@
+<div class="topics">
+
+        <h1>Topics</h1>
+
+        <%=  link_to 'New Topic',  new_topic_path, class: "btn btn-into btn-lg" %>
+
+        <% @topics.each do |topic| %>
+          <div class="topic">
+            <h3><%= topic.title %></h3>
+            <h5><%= topic.description %></h5>
+            <%= link_to topic.title, topic_path(topic) %>
+
+        <%= link_to 'Edit Topic' , edit_topic_path(topic), class: "btn btn-into btn-lg mar20top" %>
+
+          </div>
+        <% end %>
+</div>
