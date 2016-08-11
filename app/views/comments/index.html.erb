@@ -1,0 +1,16 @@
+<div class="views">
+
+    <div class="text-center">
+
+          <h1>Views</h1>
+          <%= link_to 'New View', index_topic_post_path, class: "btn btn-into btn-lg"%>
+    </div>
+
+          <%@views.each do |view|%>
+            <div c;ass="view">
+                <h3><%=view.title%></h3>
+                <h5><%=view.body%><h5>
+
+                </div>
+              <%end%>
+      </div>

@@ -17,6 +17,13 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 
+gem 'bootstrap-sass'
+gem "font-awesome-rails"
+
+gem 'carrierwave'
+gem 'mini_magick', '~> 3.5.0'
+
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -27,10 +34,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 
-gem 'bootstrap-sass'
-gem "font-awesome-rails"
-
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -38,9 +41,7 @@ gem "font-awesome-rails"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 gem 'pry'
-
   # gem 'byebug', platform: :mri
-
 end
 
 group :development do
