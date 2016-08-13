@@ -1,16 +1,36 @@
-<div class="views">
+<div class="topics">
+  <div class="text-center">
+     <h1>Topics</h1>
+  </div>
+      <% @topics.each do |topic| %>
+  <div class="topic">
+     <h5><%= topic.description %><h5>
+  </div>
+     <% end %>
+  </div>
 
-    <div class="text-center">
 
-          <h1>Views</h1>
-          <%= link_to 'New View', index_topic_post_path, class: "btn btn-into btn-lg"%>
-    </div>
 
-          <%@views.each do |view|%>
-            <div c;ass="view">
-                <h3><%=view.title%></h3>
-                <h5><%=view.body%><h5>
+<div class="posts">
+         <div class="text-center">
+             <h1>Posts</h1>
+        </div>
+              <% @posts.each do |post| %>
+         <div class="post">
+                <h5><%= post.body %><h5>
+        </div>
+            <% end %>
+</div>
 
-                </div>
-              <%end%>
+
+
+    <div class="comments">
+      <div class="text-center">
+         <h1>Comments</h1>
+      </div>
+           <% @comments.each do |comment| %>
+      <div class="comment">
+          <h5><%= comment.body %><h5>
+     </div>
+        <% end %>
       </div>

@@ -27,34 +27,6 @@ class TopicsController < ApplicationController
   end
 
 
-
-
-  # def create
-  #   @topic = Topic.new(topic_params)
-  #
-  #   if @topic.save
-  #     flash[:success] = "You've created a new topic."
-  #     redirect_to topics_path
-  #   else
-  #     flash[:danger] = @topic.errors.full_messages
-  #     redirect_to new_topic_path
-  #   end
-  # end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   def edit
      @topic = Topic.find_by(id: params[:id])
   end
@@ -67,7 +39,7 @@ class TopicsController < ApplicationController
     else
       redirect_to edit_topic_path(@topic)
     end
-      end
+end
 
   def destroy
     @topic = Topic.find_by(id: params[:id])
@@ -76,7 +48,7 @@ class TopicsController < ApplicationController
    else
      redirect_to topic_path(@topic)
    end
-     end
+end
 
 
   private
